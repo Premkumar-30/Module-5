@@ -1,4 +1,55 @@
-Details of the Employee:  
-1 sales 10000 1000 3000 14000.00  
-2 marketing 20000 2000 6000 28000.00  
-3 manager 30000 3000 9000 42000.00 
+EX NO 25: C PROGRAM TO FIND VOWELS AND CONSONANTS USING POINTER.
+DATE:30-04-2025
+
+
+AIM:
+To write a program to find vowels and consonants using pointer
+
+ALGORITHM:
+1. Start.
+2. Declare a variable value of type char.
+3. Prompt the user to enter a value.
+4. Read the value using scanf.
+5. Find vowel and consonants
+6. End.
+
+PROGRAM:
+#include <stdio.h>
+int main() {
+ char str[100];
+ char *p;
+ int vowels = 0, consonants = 0;
+ scanf(" %[^\n]", str); 
+ p = str; 
+ while (*p != '\0') {
+ if ((*p >= 'A' && *p <= 'Z') || (*p >= 'a' && *p <= 'z')) {
+ char ch = (*p >= 'A' && *p <= 'Z') ? *p + 32 : *p;
+ if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+ vowels++;
+ } else {
+ consonants++;
+ }
+ }
+ p++;
+ }
+ printf("Vowels: %d\n", vowels);
+ printf("Consonants: %d\n", consonants);
+ return 0;
+}
+
+C program to find vowels and consonants using pointer
+
+Developed by:  Prem kumar K
+RegisterNumber:  212223060209
+
+INPUT: 
+Hello
+World
+
+
+OUTPUT:
+Vowels: 3
+Consonants: 7
+
+RESULT:
+Thus, the program is executed and verified successfully
