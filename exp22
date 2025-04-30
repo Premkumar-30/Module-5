@@ -1,0 +1,48 @@
+EX NO 22: C PROGRAM TO FIND TOTAL EVEN ELEMENTS IN AN ARRAY USING CALLOC()
+DATE:30-04-2025
+
+
+AIM:
+To write a program to find total even elements in an array using calloc().
+
+ALGORITHM:
+1. Start.
+2. Define a variables.
+3. Write program to count total number of even elements in an array using calloc().
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End
+
+PROGRAM:
+#include<stdio.h> 
+#include<stdlib.h> 
+int main()
+{
+int *arr,n,i,count=0; 
+scanf("%d",&n); 
+arr=(int*)calloc(1,sizeof(int)); 
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+for(i=0;i<n;i++)
+if(arr[i]%2==0) 
+count++;
+printf("Total even elements: %d",count);
+}
+
+C program to find total even elements in an array using calloc().
+
+Developed by:  Prem kumar K
+RegisterNumber:  212223060209
+
+INPUT: 
+4
+1 2 3 4
+
+OUTPUT:
+Total even elements: 2
+
+RESULT:
+Thus, the program is executed and verified successfully
